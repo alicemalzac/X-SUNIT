@@ -1,0 +1,5 @@
+current directory: /home/alice/x-sunit/vendor/bundle/gems/childprocess-1.0.1/ext
+/usr/bin/ruby2.5 mkrf_conf.rb
+
+current directory: /home/alice/x-sunit/vendor/bundle/gems/childprocess-1.0.1/ext
+/usr/bin/ruby2.5 -rrubygems /home/alice/x-sunit/vendor/bundle/gems/rake-12.3.2/exe/rake RUBYARCHDIR\=/home/alice/x-sunit/vendor/bundle/extensions/x86_64-linux/2.5.0/childprocess-1.0.1 RUBYLIBDIR\=/home/alice/x-sunit/vendor/bundle/extensions/x86_64-linux/2.5.0/childprocess-1.0.1

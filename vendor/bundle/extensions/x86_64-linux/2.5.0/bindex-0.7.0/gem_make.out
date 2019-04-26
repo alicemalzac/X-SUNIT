@@ -1,0 +1,15 @@
+current directory: /home/alice/x-sunit/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20190425-4721-1ojzi7p.rb extconf.rb
+creating Makefile
+
+current directory: /home/alice/x-sunit/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/alice/x-sunit/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /home/alice/x-sunit/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190425-4721-fx5sz2/skiptrace
