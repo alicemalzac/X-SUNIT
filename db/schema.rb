@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_27_163324) do
+ActiveRecord::Schema.define(version: 2019_04_28_204827) do
 
   create_table "survivors", force: :cascade do |t|
     t.string "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_04_27_163324) do
     t.datetime "updated_at", null: false
     t.boolean "abducted", default: false
     t.integer "abductedcount"
+    t.float "percentage_abducted"
   end
 
 end

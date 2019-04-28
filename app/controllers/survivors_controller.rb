@@ -4,7 +4,7 @@ class SurvivorsController < ApplicationController
   # GET /survivors
   # GET /survivors.json
   def index
-    @survivors = Survivor.all
+    @survivors = Survivor.order(name: :asc)
   end
 
   # GET /survivors/1
@@ -69,6 +69,14 @@ class SurvivorsController < ApplicationController
     end
   end 
   
+  byebug
+  def percentage_abducted
+    if(abducted == true)
+      puts "#{abducted/survivor.all * 100}% of abducted"
+    else
+      return "#{abducted/survivor.all * 100}% of non-abducted"
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
