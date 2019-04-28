@@ -69,15 +69,6 @@ class SurvivorsController < ApplicationController
     end
   end 
   
-  byebug
-  def percentage_abducted
-    if(abducted == true)
-      puts "#{abducted/survivor.all * 100}% of abducted"
-    else
-      return "#{abducted/survivor.all * 100}% of non-abducted"
-    end
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_survivor

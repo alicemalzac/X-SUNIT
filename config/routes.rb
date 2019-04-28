@@ -7,5 +7,4 @@ Rails.application.routes.draw do
 
    get '/abducted/:id', to: 'survivors#abducted', as: 'abducted'
    get  'reports', to: 'static_pages#reports'
-   get '/abducted/percentage_abducted/:id', to: 'survivors#abducted', as: 'percentage_abducted'
   end
