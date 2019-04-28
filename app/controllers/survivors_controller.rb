@@ -1,5 +1,5 @@
 class SurvivorsController < ApplicationController
-  before_action :set_survivor, only: [:show, :edit, :update, :destroy]
+  before_action :set_survivor, only: [:show, :edit, :update, :destroy, :abducted]
 
   # GET /survivors
   # GET /survivors.json
@@ -62,8 +62,11 @@ class SurvivorsController < ApplicationController
   end
 
   def abducted
-    abducted = Survivors.find(params[:id]
-    abducted.increment!(:abductedcount)
+    if @survivor.increment!(:abductedcount)
+      redirect_to @survivor, notice: 'Survivor abducted count was incremented.' 
+    else
+      render :show
+    end
   end 
   
 
@@ -77,4 +80,5 @@ class SurvivorsController < ApplicationController
     def survivor_params
       params.require(:survivor).permit(:name, :age, :gender, :latitude, :longitude)
     end
+  end
 

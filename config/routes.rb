@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
    root to: "static_pages#index"
 
-   get '/survivors/:id/abducted',to: 'survivors#abducted'
-   
+   get '/abducted/:id', to: 'survivors#abducted', as: 'abducted'
+
 end

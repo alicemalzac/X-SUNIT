@@ -3,15 +3,20 @@
     <h1>Welcome, Survivors</h1>
 
 
+    
 <p> Please registrate or update your location here!</p>
+<%= link_to 'Survivors Registrations', new_survivor_path, class: 'btn btn-primary btn-lg' %>
 
-<%= link_to 'Survivors Registrations', survivors_path, class: 'btn btn-primary btn-lg' %>
 
+<p></p>
 <p> Verify about the survivors situation:</p>
-<%= link_to 'Reports', survivors_path, class: 'btn btn-primary btn-lg' %>
+<p> <%= link_to 'Percentage of abducted survivors', new_survivor_path %></p>
+<p> <%= link_to 'Percentage of non-abducted survivors', new_survivor_path %></p>
+<p> <%= link_to 'List of survivors', survivors_path %></p>
+
 
 <p></p>
 
-<p> Stay alive.</p>
+<p> Be Careful.</p>
 
 </div>
