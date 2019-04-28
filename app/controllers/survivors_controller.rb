@@ -61,6 +61,12 @@ class SurvivorsController < ApplicationController
     end
   end
 
+  def abducted
+    abducted = Survivors.find(params[:id]
+    abducted.increment!(:abductedcount)
+  end 
+  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_survivor
@@ -71,4 +77,4 @@ class SurvivorsController < ApplicationController
     def survivor_params
       params.require(:survivor).permit(:name, :age, :gender, :latitude, :longitude)
     end
-end
+

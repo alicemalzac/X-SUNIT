@@ -25,5 +25,11 @@
   <%= @survivor.longitude %>
 </p>
 
+<strong>Abducted:</strong>
+  <%= @survivor.abducted %>
+
+
+
 <%= link_to 'Edit', edit_survivor_path(@survivor) %> |
-<%= link_to 'Back', survivors_path %>
+<%= link_to 'Back', survivors_path %> |
+<%= link_to 'Mark as Abducted', abducted_path(@abducted) %>
