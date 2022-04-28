@@ -1,7 +1,5 @@
 # X-SUNIT
 
-This project has been developed for the *Gocase* backend internship. So I would like to thank for the challenge, it really pushed me into learning Ruby on Rails. It has made me realize how interesting the language is and how much you can do with it.
-
 # The code
 We are dealing with an apocalyptical situation, so it is important to keep everything simple. In this program we can register a survivor, edit and destroy the register, and mark the survivor as abducted (for the variable to modify, we must have at least 3 "clicks" in the button and we also must report survivors) and see the reports.
 
@@ -44,7 +42,6 @@ A survivor has the following variables:
 # What stack did I used?
 
   * Ruby on Rails 5;
-  * Git;
   * Sqlite;
   * Bootstrap
 
